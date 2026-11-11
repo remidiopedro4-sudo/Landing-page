@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Aprenda a criar uma página de vendas com uma estrutura simples, organizada e profissional.">
+  <title>Página de Vendas — Comece do jeito certo</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080808;--panel:#111;--line:#292929;--muted:#aaa;--white:#f5f5f5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+    header{padding:22px 0;border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:14px;font-weight:800;letter-spacing:2px}.brand span{color:#999}
+    .nav a:last-child{font-size:13px;color:#ccc}
+    .hero{padding:88px 0 76px;text-align:center}.eyebrow{display:inline-block;border:1px solid #444;border-radius:99px;padding:6px 13px;color:#bbb;font-size:11px;letter-spacing:1.6px;text-transform:uppercase}
+    h1{max-width:850px;margin:24px auto 18px;font-size:clamp(38px,7vw,68px);line-height:1.04;letter-spacing:-2.8px}h1 span{color:#999}
+    .lead{max-width:650px;margin:0 auto;color:#b8b8b8;font-size:17px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;min-height:50px;padding:0 24px;border:1px solid var(--white);border-radius:5px;background:var(--white);color:#080808;font-weight:800;font-size:14px;transition:.2s}
+    .btn:hover{background:#d9d9d9;transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--white);border-color:#555}
+    .section{padding:72px 0;border-top:1px solid var(--line)}.section-head{max-width:650px;margin-bottom:32px}.kicker{color:#888;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+    h2{font-size:clamp(28px,4vw,42px);line-height:1.12;letter-spacing:-1.3px;margin:10px 0 12px}.section-head p,.muted{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.item{padding:24px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(145deg,#141414,#0d0d0d)}
+    .num{font-size:12px;color:#777;letter-spacing:1px}.item h3{font-size:17px;margin:15px 0 7px}.item p{font-size:14px;color:#aaa;margin:0}
+    .promise{padding:34px;border:1px solid #383838;border-radius:9px;background:#101010;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+    .promise strong{font-size:clamp(22px,3vw,32px);line-height:1.2}.checks{list-style:none;margin:0;padding:0}.checks li{padding:8px 0;color:#c7c7c7;border-bottom:1px solid #292929;font-size:14px}.checks li:before{content:"✓";color:#fff;margin-right:10px}
+    .difference{display:grid;grid-template-columns:1fr 1fr;gap:14px}.difference .item{min-height:155px}
+    .testimonial{border:1px dashed #555;padding:30px;border-radius:8px;text-align:center;color:#aaa}.testimonial strong{display:block;color:#eee;margin-bottom:8px}
+    .price-card{max-width:560px;margin:auto;padding:38px;border:1px solid #555;border-radius:10px;text-align:center;background:#111}.old{color:#888;text-decoration:line-through;font-size:14px}.price{font-size:58px;font-weight:850;letter-spacing:-2px;line-height:1.1;margin:8px 0}.price small{font-size:17px;letter-spacing:0}.price-card p{color:#aaa;font-size:14px}.price-card .btn{width:100%;margin-top:14px}
+    .secure{font-size:12px;color:#888;margin-top:14px}.note{font-size:12px;color:#777;margin-top:18px}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:#777;font-size:12px;text-align:center}
+    @media(max-width:700px){.hero{padding:65px 0 58px}h1{letter-spacing:-1.6px}.grid{grid-template-columns:1fr}.promise,.difference{grid-template-columns:1fr}.section{padding:56px 0}.price-card{padding:28px 20px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav"><div class="brand">PÁGINA<span> .</span> DE VENDAS</div><a href="#conteudo">O que você vai aprender</a></div></header>
+  <main>
+    <section class="hero wrap">
+      <span class="eyebrow">Aprenda na prática • Do básico ao organizado</span>
+      <h1>Aprenda a criar uma página de vendas <span>simples e profissional.</span></h1>
+      <p class="lead">Descubra como organizar as informações do seu produto, apresentar seus benefícios e montar uma página que conduza o visitante até a compra.</p>
+      <div class="actions"><a class="btn" href="#oferta">QUERO APRENDER POR R$ 5,00</a><a class="btn secondary" href="#conteudo">VER O QUE VOU APRENDER</a></div>
+    </section>
+
+    <section class="section"><div class="wrap">
+      <div class="section-head"><span class="kicker">A proposta</span><h2>Uma página bem montada faz diferença.</h2><p>Você não precisa começar com uma estrutura complicada. Aprenda a organizar os elementos essenciais para apresentar sua oferta com clareza.</p></div>
+      <div class="promise"><strong>Saia do zero e entenda como estruturar sua própria página de vendas.</strong><ul class="checks"><li>Apresentação clara do produto</li><li>Design limpo e organização visual</li><li>Oferta e benefícios bem explicados</li><li>Chamada para ação e pagamento</li></ul></div>
+    </div></section>
+
+    <section class="section" id="conteudo"><div class="wrap">
+      <div class="section-head"><span class="kicker">Conteúdo</span><h2>O que você vai aprender</h2><p>Uma base prática para montar uma página com começo, meio e fim.</p></div>
+      <div class="grid">
+        <article class="item"><span class="num">01 / APRESENTAÇÃO</span><h3>Apresentar seu produto</h3><p>Como explicar o que você oferece e chamar a atenção do visitante logo no início.</p></article>
+        <article class="item"><span class="num">02 / DESIGN</span><h3>Design e organização</h3><p>Como montar uma página visualmente agradável, simples e fácil de navegar.</p></article>
+        <article class="item"><span class="num">03 / PROMESSA</span><h3>Promessa do produto</h3><p>Como comunicar com clareza o resultado ou aprendizado que sua oferta entrega.</p></article>
+        <article class="item"><span class="num">04 / VANTAGENS</span><h3>Vantagens e benefícios</h3><p>Como destacar os pontos positivos e mostrar por que sua solução pode ajudar.</p></article>
+        <article class="item"><span class="num">05 / DIFERENCIAIS</span><h3>O que torna sua oferta diferente</h3><p>Como apresentar seus diferenciais sem exageros ou promessas vazias.</p></article>
+        <article class="item"><span class="num">06 / CONVERSÃO</span><h3>Depoimentos e pagamento</h3><p>Onde inserir provas sociais reais e como direcionar o cliente para finalizar a compra.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="wrap">
+      <div class="section-head"><span class="kicker">Por que começar aqui?</span><h2>O básico bem feito, sem complicação.</h2></div>
+      <div class="difference">
+        <article class="item"><h3>Fácil de acompanhar</h3><p>Uma estrutura objetiva para quem está começando e precisa entender cada parte da página.</p></article>
+        <article class="item"><h3>Aplicação prática</h3><p>Aprenda a organizar os elementos e use a estrutura como ponto de partida para sua própria oferta.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="wrap">
+      <div class="section-head"><span class="kicker">Experiências de alunos</span><h2>Depoimentos</h2><p>Veja aqui relatos de pessoas que aplicaram o conteúdo.</p></div>
+      <div class="testimonial"><strong>Seu depoimento pode aparecer aqui.</strong>Adicione relatos verdadeiros de alunos, com autorização, depois que tiver as primeiras avaliações.</div>
+    </div></section>
+
+    <section class="section" id="oferta"><div class="wrap">
+      <div class="section-head" style="text-align:center;margin:0 auto 28px"><span class="kicker">Acesso ao conteúdo</span><h2>Comece a montar sua página.</h2><p>Aprenda a estruturar uma página de vendas com uma apresentação clara e organizada.</p></div>
+      <div class="price-card"><div class="kicker">Oferta de acesso</div><div class="price">R$ 5,00</div><p>Pagamento único. Sem mensalidade.</p><a class="btn" href="#pagamento">QUERO COMEÇAR AGORA</a><div class="secure">Pagamento e acesso conforme as condições informadas no checkout.</div><div class="note" id="pagamento">Link do checkout ainda precisa ser conectado para receber pagamentos.</div></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap">© 2026 • Todos os direitos reservados.</div></footer>
+</body>
+</html>
